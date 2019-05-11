@@ -1,9 +1,2 @@
-###学号201811113013###
-import re
-result=[]
 with open('log_files/201811113013.log',encoding='utf8') as f:
-    for line in f:
-        result.append(re.split(r'[：,]',line)[3])
-print(result.count('201811113013'))
-# 结果是109
-        
+    print(list(str(f.read()).split('：')).count('201811113013, 时间'))
